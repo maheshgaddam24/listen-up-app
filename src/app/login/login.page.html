@@ -1,0 +1,32 @@
+<ion-content scroll-y="false">
+  <img src="./assets/icon/logo.png">
+  <div class="signin">
+    <h1>Login to your account</h1>  
+  </div>
+  <div class="login">
+    <ion-item >
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email" autocapitalize="sentences" autocomplete="off" #userEmail required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" autocapitalize="sentences" autocomplete="off" #userPassword required></ion-input>
+    </ion-item>
+    <ion-button color="new" (click)="authService.SignIn(userEmail.value, userPassword.value)">Log in</ion-button>
+    <p class="fp" [routerLink]="['/forgot-password']">Forgot Password?</p>
+    <span class="divider line one-line">or continue with</span>
+    <ion-row>
+      <img class="google" src="./assets/icon/google.png" (click)="authService.GoogleAuth()">
+      <img class="apple" src="./assets/icon/apple.png" (click)="authService.AppleAuth()">
+      <img class="fb" src="./assets/icon/fb.png" (click)="authService.FacebookAuth()">
+    </ion-row>
+    
+  </div>
+  
+  <div class="reg">
+    <h5>Don't have an account?</h5>
+    <h5 class="btn" [routerLink]="['/registration']">Sign Up</h5> 
+    
+  </div>
+
+</ion-content>

@@ -1,0 +1,114 @@
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.signin {
+    display: flex;
+    align-items: center;
+    margin-left: 60px; 
+}
+
+ion-back-button{
+    color: #ffffff;
+}
+
+img {
+    margin-top: 75px;
+    margin-left: 50px;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+.login {
+    width: 350px;
+    margin-left: 10px;
+
+}
+
+ion-button {
+    align-items: center;
+    margin-left: 18px;
+    margin-top: 20px;
+    border-radius: 50%;
+    width: 335px;   
+}
+
+.fp {
+    margin-left: 22px;
+    font-size: 14px;
+    font-weight: 100;
+    color: #696969;
+    
+}
+
+.divider {
+    display: flex;
+    
+    &:before,
+    &:after {
+      content: "";
+      flex: 1;
+    }
+  }
+  
+  .line {
+    align-items: center;
+    margin: 1em 1em;
+    color: #cccccc;
+    
+    &:before,
+    &:after {
+      height: 1px;
+      margin: 0 1em;
+    }
+  } 
+  
+  .one-line {
+    &:before,
+    &:after {
+       background: #cccccc;
+    }
+  }
+
+.google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 80px;
+}
+
+.apple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.fb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    image-resolution: 30*30;
+}
+
+.reg{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 55px;
+    
+}
+
+.btn {
+    margin-top: 15px;
+    margin-left: 5px;
+    color: #06A0B5;
+    font-weight: 600;
+    
+}

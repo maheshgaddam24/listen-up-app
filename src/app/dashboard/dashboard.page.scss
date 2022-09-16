@@ -1,0 +1,31 @@
+.db{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 120px; 
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+ion-avatar {
+    --border-radius: 50%;
+    width: 120px !important; 
+    height : 120px !important;
+    margin-top: 20px;
+    margin-left: 120px;
+}
+
+ion-item {
+    width: 350px;
+    margin-left: 10px;
+}
+
+ion-button {
+    align-items: center;
+    margin-left: 18px;
+    margin-top: 20px;
+    border-radius: 50%;
+    width: 335px;   
+}
+
+

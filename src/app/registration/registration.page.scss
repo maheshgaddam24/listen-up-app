@@ -1,0 +1,101 @@
+ion-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    margin-top: 75px;
+    margin-left: 50px;
+}
+
+.signup {
+    margin-left: 140px;
+}
+
+h1 {
+    font-weight: 500;
+    font-style: poppins;
+}
+
+.register {
+    margin-left: 10px;
+    width: 350px;
+
+}
+
+ion-button {
+    align-items: center;
+    margin-left: 18px;
+    margin-top: 20px;
+    border-radius: 50%;
+    width: 335px;
+}
+
+.divider {
+    display: flex;
+    
+    &:before,
+    &:after {
+      content: "";
+      flex: 1;
+    }
+  }
+  
+  .line {
+    align-items: center;
+    margin: 1em 1em;
+    color: #cccccc;
+    
+    &:before,
+    &:after {
+      height: 1px;
+      margin: 0 1em;
+    }
+  } 
+  
+  .one-line {
+    &:before,
+    &:after {
+       background: #cccccc;
+    }
+  }
+
+
+.google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 80px;
+}
+
+.apple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.fb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    image-resolution: 30*30;
+}
+
+.reg{
+    display: flex;
+    align-items: center;
+    margin-left: 55px;
+    margin-top: 30px;
+}
+
+.btn {
+    margin-top: 15px;
+    margin-left: 5px;
+    color: #06A0B5;
+    font-weight: 600;
+  
+}

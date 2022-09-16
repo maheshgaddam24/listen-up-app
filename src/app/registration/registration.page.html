@@ -1,0 +1,44 @@
+<ion-content scroll-y="false">
+  <img src="./assets/icon/logo.png">
+  <div class="signup">
+    <h1>Sign Up</h1>  
+  </div>
+  <div class="register">
+    <ion-item >
+      <ion-label position="floating">Name</ion-label>
+      <ion-input type="text" autocapitalize="sentences" autocomplete="off" #displayName required></ion-input>
+    </ion-item>
+    <ion-item >
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email" autocapitalize="sentences" autocomplete="off" #userEmail required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" autocapitalize="sentences" autocomplete="off" #userPassword required></ion-input>
+    </ion-item>
+    <ion-button color="new" type="submit" (click)="authService.SignUp(displayName.value, userEmail.value, userPassword.value)">Sign Up</ion-button>
+    <span class="divider line one-line">or continue with</span>
+    <ion-row>
+      <img class="google" src="./assets/icon/google.png" (click)="authService.GoogleAuth()">
+      <img class="apple" src="./assets/icon/apple.png" (click)="authService.AppleAuth()">
+      <img class="fb" src="./assets/icon/fb.png" (click)="authService.FacebookAuth()">
+    </ion-row>
+  </div>
+
+  <div class="reg">
+    <h5>Already have an account?</h5>
+    <h5 class="btn" [routerLink]="['/login']">LogIn</h5> 
+  </div>
+
+</ion-content>
+
+
+<!-- <ion-item >
+  <ion-label position="floating">Email</ion-label>
+  <ion-input type="email" #email required></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="floating">Password</ion-label>
+  <ion-input type="password" #password required></ion-input>
+</ion-item>
+<ion-button color="new" type="submit" (click)="SignUp(email.value, password.value)">Sign Up</ion-button> -->
