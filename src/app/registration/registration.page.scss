@@ -1,26 +1,32 @@
-ion-content{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+ion-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ion-col {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-img {
-    margin-top: 75px;
-    margin-left: 50px;
+.img {
+    margin-top: 60px;
+    height: 150px;
+    width: 150px;
 }
 
 .signup {
-    margin-left: 140px;
+    font-weight: 500;
+    font-size: 22px;
+    font-family: 'Poppins';
 }
 
-h1 {
-    font-weight: 500;
-    font-style: poppins;
-}
 
 .register {
-    margin-left: 10px;
-    width: 350px;
+    width: 300px;
 
 }
 
@@ -29,7 +35,7 @@ ion-button {
     margin-left: 18px;
     margin-top: 20px;
     border-radius: 50%;
-    width: 335px;
+    width: 282px; 
 }
 
 .divider {
@@ -63,39 +69,26 @@ ion-button {
 
 
 .google {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 10px;
-    margin-left: 80px;
 }
 
 .apple {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 10px;
 }
 
 .fb {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 10px;
-    image-resolution: 30*30;
 }
 
 .reg{
-    display: flex;
-    align-items: center;
-    margin-left: 55px;
+    font-size: 16px;
     margin-top: 30px;
 }
 
 .btn {
-    margin-top: 15px;
+    font-size: 16px;
+    margin-top: 2px;
     margin-left: 5px;
     color: #06A0B5;
-    font-weight: 600;
-  
+    font-weight: 600;   
 }

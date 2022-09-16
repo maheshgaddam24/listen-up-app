@@ -1,4 +1,10 @@
-<ion-content scroll-y="false">
-  <img class="img" src="./assets/icon/Welcome.png">
-  <ion-button class="btn" color="new" [routerLink]="['/login']">Get Started</ion-button>
-</ion-content>
+<ion-app >
+  <ion-content color='black' scroll-y="false">
+    <ion-grid>
+      <ion-row><img class="img" src="./assets/icon/Welcome.png"></ion-row>
+      <ion-row>
+        <ion-button class="btn" color="new" [routerLink]="['/login']">Get Started</ion-button>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+</ion-app>

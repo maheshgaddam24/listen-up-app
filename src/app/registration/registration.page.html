@@ -1,36 +1,54 @@
-<ion-content scroll-y="false">
-  <img src="./assets/icon/logo.png">
-  <div class="signup">
-    <h1>Sign Up</h1>  
-  </div>
-  <div class="register">
-    <ion-item >
-      <ion-label position="floating">Name</ion-label>
-      <ion-input type="text" autocapitalize="sentences" autocomplete="off" #displayName required></ion-input>
-    </ion-item>
-    <ion-item >
-      <ion-label position="floating">Email</ion-label>
-      <ion-input type="email" autocapitalize="sentences" autocomplete="off" #userEmail required></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="floating">Password</ion-label>
-      <ion-input type="password" autocapitalize="sentences" autocomplete="off" #userPassword required></ion-input>
-    </ion-item>
-    <ion-button color="new" type="submit" (click)="authService.SignUp(displayName.value, userEmail.value, userPassword.value)">Sign Up</ion-button>
-    <span class="divider line one-line">or continue with</span>
+<ion-app>
+  <ion-content scroll-y="false">
     <ion-row>
-      <img class="google" src="./assets/icon/google.png" (click)="authService.GoogleAuth()">
-      <img class="apple" src="./assets/icon/apple.png" (click)="authService.AppleAuth()">
-      <img class="fb" src="./assets/icon/fb.png" (click)="authService.FacebookAuth()">
+      <img class='img' src="./assets/icon/logo.png">
     </ion-row>
-  </div>
+    <ion-row>
+      <div class="signup">
+        <h1>Sign Up</h1>
+      </div>
+    </ion-row>
+    <ion-row>
+      <div class="register">
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input type="email" autocapitalize="sentences" autocomplete="off" #userEmail required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Password</ion-label>
+          <ion-input type="password" autocapitalize="sentences" autocomplete="off" #userPassword required></ion-input>
+        </ion-item>
+        <ion-button color="new" type="submit"
+          (click)="authService.SignUp(userEmail.value, userPassword.value)">Sign Up</ion-button>
+          <span class="divider line one-line">or continue with</span>
+          <ion-row>
+            <ion-col>
+              <img class="google" src="./assets/icon/google.png" (click)="authService.GoogleAuth()">
+            </ion-col>
+            <ion-col>
+              <img class="apple" src="./assets/icon/apple.png" (click)="authService.AppleAuth()">
+            </ion-col>
+            <ion-col>
+              <img class="fb" src="./assets/icon/fb.png" (click)="authService.FacebookAuth()">
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <div>
+              <h5 class="reg">Already have an account?<span class="btn" [routerLink]="['/login']">LogIn</span></h5>
+            </div>
+          </ion-row>
+        </div>
+    </ion-row>
+  </ion-content>
+</ion-app>
 
-  <div class="reg">
-    <h5>Already have an account?</h5>
-    <h5 class="btn" [routerLink]="['/login']">LogIn</h5> 
-  </div>
 
-</ion-content>
+
+    
+    
+      
+
+    
 
 
 <!-- <ion-item >

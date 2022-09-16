@@ -1,14 +1,25 @@
-.img {
-    height: 844x;
-    width: 390px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+ion-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.btn {
+.img {
+    height: auto;
+    width: auto;
+    object-fit: fill;
+    background-size: auto;
+    border-radius: 6%;
+}
+
+ion-button {
     align-items: center;
-    margin-left: 25px;
     border-radius: 50%;
-    width: 335px;
-    margin-top: -150px;
-    font-weight: 600;
+    width: 250px;
+    margin-top: -130px;
+    font-weight: 500;
     font-size: 20px;
+    font-family: 'Poppins';
 }

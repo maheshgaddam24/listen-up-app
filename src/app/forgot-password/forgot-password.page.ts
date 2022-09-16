@@ -8,7 +8,9 @@ import { AuthService } from "../shared/services/auth.service";
 })
 export class ForgotPasswordPage implements OnInit {
 
-  constructor() { }
+  constructor(
+    public authService: AuthService
+  ) { }
 
   ngOnInit() {
   }
