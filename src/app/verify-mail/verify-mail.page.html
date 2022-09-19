@@ -1,24 +1,31 @@
 <ion-app>
-<ion-content scroll-y="false">
-  <div class="vm">
+  <ion-content color="black" scroll-y="false">
+    <ion-grid>
+      <ion-row>
+        <img class='img' src="./assets/icon/logo.png">
+      </ion-row>
       <div class="authBlock">
-        <h3>Thank You for Registering</h3>
+        <ion-row>
+          <h3>Thank You for Registering</h3>
+        </ion-row>
         <div class="formGroup" *ngIf="authService.userData as user">
-          <p class="text-center">We have sent a confirmation email to <strong>{{user.email}}</strong>.</p>
-          <p class="text-center">Please check your email and click on the link to verfiy your email address.</p>
-        </div>
-        
-        <!-- Calling SendVerificationMail() method using authService Api -->
-        <div class="formGroup">
-          <ion-button (click)="authService.SendVerificationMail()">
-            
-            Resend Verification Email
-          </ion-button>
+          <ion-row>
+            <p class="text-center">We have sent a confirmation email to 
+              <strong>{{user.email}}</strong>.</p>
+          </ion-row>
+         <ion-row>
+          <p>Please check your email and click on the link to verfiy your email address.</p>
+         </ion-row>
         </div>
       </div>
-      <div class="redirectToLogin">
-        <span>Go back to?<span class="redirect" routerLink="/login"> Sign in</span></span>
-      </div>
-  </div>
-</ion-content>
-</ion-app>
+      <ion-row>
+        <ion-button color="new" (click)="authService.SendVerificationMail()"> 
+          Resend Verification Email
+        </ion-button>
+      </ion-row>
+      <ion-row>
+        <span class="back">Go back to ? <span class="btn1" routerLink="/login">Log in</span></span>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+  </ion-app>

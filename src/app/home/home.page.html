@@ -1,15 +1,17 @@
 <ion-app>
-  <ion-content scroll-y="false" [routerLink]="['/load']">
+  <ion-content color="black" scroll-y="false">
     <ion-grid>
       <ion-row>
         <img class="img" src="./assets/icon/Untitled.png">
       </ion-row>
       <ion-row>
         <div class="flex-center">
-          <h1 [routerLink]="['/load']">Listen Up</h1>
+          <h1>Listen Up</h1>
         </div>
       </ion-row>
-      
+      <ion-row>
+        <ion-button class="btn" color="new" [routerLink]="['/login']">Get Started</ion-button>
+      </ion-row>
     </ion-grid>
   </ion-content>
 </ion-app>

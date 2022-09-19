@@ -1,5 +1,7 @@
 {
   "name": "Listen-Up",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

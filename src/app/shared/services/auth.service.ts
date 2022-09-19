@@ -31,7 +31,7 @@ export class AuthService {
     });
   }
   // Sign in with email/password
-  SignIn(email: string, password: string) {
+  SignIn(email: any, password: any) {
     return this.ngFireAuth
       .signInWithEmailAndPassword(email, password)
       .then((result) => {
@@ -49,7 +49,7 @@ export class AuthService {
       });
   }
   // Sign up with email/password
-  SignUp(name:string, email: string, password: string) {
+  SignUp(email: any, password: any) {
   
     return this.ngFireAuth
       .createUserWithEmailAndPassword(email, password)
@@ -74,7 +74,7 @@ export class AuthService {
       });
   }
   // Reset Forggot password
-  ForgotPassword(passwordResetEmail: string) {
+  ForgotPassword(passwordResetEmail: any) {
     return this.ngFireAuth
       .sendPasswordResetEmail(passwordResetEmail)
       .then(() => {

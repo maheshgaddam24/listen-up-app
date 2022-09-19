@@ -1,24 +1,28 @@
-<ion-content scroll-y="false">    
-  <div class="db">
-    <h1>User Profile</h1>  
-  </div>  
-  <div class="row" *ngIf="authService.userData as user">
-    <ion-avatar><img src="{{(user.photoURL) ? user.photoURL : '/assets/user.png'}}"></ion-avatar>
-    <ion-item >
-      <p>Name: <strong>{{(user.displayName) ? user.displayName : 'User'}}</strong></p>
-    </ion-item>
-    <ion-item>
-      <p>Email: <strong>{{user.email}}</strong></p>
-    </ion-item>
-    
-  </div>
-</ion-content>
-  <ion-row>
-    <ion-col>
-      <ion-button color="new" type="submit" (click)="authService.SignOut()" expand="block">Log out</ion-button>
-    </ion-col>
-  </ion-row>
-  
-    
-
-
+<ion-app>
+  <ion-content color="black" scroll-y="false"> 
+    <ion-grid>
+      <ion-row>
+        <div class="db">
+          <h1>User Profile</h1>  
+        </div>
+      </ion-row>
+      <ion-row>
+        <div class="row" *ngIf="authService.userData as user">
+          <ion-row><ion-avatar><img src="{{(user.photoURL) ? user.photoURL : '/assets/user.png'}}"></ion-avatar>
+          </ion-row>
+          <div class="det">
+            <ion-item >
+              <p>Name: <strong>{{(user.displayName) ? user.displayName : 'User'}}</strong></p>
+            </ion-item>
+            <ion-item>
+              <p>Email: <strong>{{user.email}}</strong></p>
+            </ion-item>
+          </div>
+        </div>
+      </ion-row>
+      <ion-row>
+        <ion-button color="new" type="submit" (click)="authService.SignOut()" expand="block">Log out</ion-button>
+      </ion-row>  
+    </ion-grid>   
+  </ion-content> 
+</ion-app>

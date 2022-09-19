@@ -1,6 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+ion-app{
+  background-color: black;
+}
+
+ion-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  margin-top: 60px;
+  height: 150px;
+  width: 180px;
+}
+
 h3 {
     margin-top: 20px;
-    margin-left: 20px;
     font-weight: 600;
+    font-family: 'Poppins';
+    font-size: 22px;
+}
+
+.text-center {
+  margin-top: 50px;
+}
+
+ion-button {
+  margin-top: 20px;
+}
+
+.btn {
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 50%;
+    width: 300px;   
+}
+
+.back {
+    margin-top: 20px;
+}
+
+.btn1 {
+    font-size: 16px;
+    margin-top: 2px;
+    margin-left: 5px;
     color: #06A0B5;
+    font-weight: 600;   
 }
