@@ -1,12 +1,12 @@
 export const environment = {
   production: true,
-  firebaseConfig : {
-    apiKey: "AIzaSyCDKPkxy83xkHLufH5nWkO_WQK2CBSmSxo",
-    authDomain: "ionic-app-listen-up.firebaseapp.com",
-    databaseURL: "https://ionic-app-listen-up-default-rtdb.firebaseio.com",
-    projectId: "ionic-app-listen-up",
-    storageBucket: "ionic-app-listen-up.appspot.com",
-    messagingSenderId: "394728467830",
-    appId: "1:394728467830:web:b5f20388562d276b80de57"
+  firebaseConfig: {
+    apiKey: "AIzaSyCLfQYurzLF1sw--ZH9pD3iftJ0KFp7SIA",
+    authDomain: "listen-up-app.firebaseapp.com",
+    databaseURL: "https://listen-up-app-default-rtdb.firebaseio.com",
+    projectId: "listen-up-app",
+    storageBucket: "listen-up-app.appspot.com",
+    messagingSenderId: "337905579557",
+    appId: "1:337905579557:web:b65f5e7d001e92e20a71cc"
   }
 };

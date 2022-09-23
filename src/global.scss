@@ -26,3 +26,38 @@
 @import "~@ionic/angular/css/flex-utils.css";
 
 
+:root {
+	--ion-color-black: #000000;
+	--ion-color-black-rgb: 0,0,0;
+	--ion-color-black-contrast: #ffffff;
+	--ion-color-black-contrast-rgb: 255,255,255;
+	--ion-color-black-shade: #000000;
+	--ion-color-black-tint: #1a1a1a;
+}
+
+.ion-color-black {
+	--ion-color-base: var(--ion-color-black);
+	--ion-color-base-rgb: var(--ion-color-black-rgb);
+	--ion-color-contrast: var(--ion-color-black-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-black-contrast-rgb);
+	--ion-color-shade: var(--ion-color-black-shade);
+	--ion-color-tint: var(--ion-color-black-tint);
+}
+
+:root {
+	--ion-color-medium: #92949c;
+	--ion-color-medium-rgb: 146,148,156;
+	--ion-color-medium-contrast: #000000;
+	--ion-color-medium-contrast-rgb: 0,0,0;
+	--ion-color-medium-shade: #808289;
+	--ion-color-medium-tint: #9d9fa6;
+}
+
+.ion-color-medium {
+	--ion-color-base: var(--ion-color-medium);
+	--ion-color-base-rgb: var(--ion-color-medium-rgb);
+	--ion-color-contrast: var(--ion-color-medium-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-medium-contrast-rgb);
+	--ion-color-shade: var(--ion-color-medium-shade);
+	--ion-color-tint: var(--ion-color-medium-tint);
+}

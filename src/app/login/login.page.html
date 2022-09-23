@@ -1,5 +1,5 @@
 <ion-app>
-  <ion-content scroll-y="false">
+  <ion-content color="black" scroll-y="false">
     <ion-grid>
       <ion-row>
         <img class='img' src="./assets/icon/logo.png">
@@ -10,16 +10,16 @@
         </div>
       </ion-row>
       <ion-row>
-        <div class="login">
-          <ion-item>
-            <ion-label position="floating">Email</ion-label>
+        <div class="login" >
+          <ion-item color="black" >
+            <ion-label position="floating" background-color="black" >Email</ion-label>
             <ion-input type="email" autocapitalize="sentences" autocomplete="off" #userEmail required></ion-input>
           </ion-item>
-          <ion-item>
+          <ion-item color="black">
             <ion-label position="floating">Password</ion-label>
             <ion-input type="password" autocapitalize="sentences" autocomplete="off" #userPassword required></ion-input>
           </ion-item>
-          <ion-button color="new" (click)="authService.SignIn(userEmail.value, userPassword.value)">Log in</ion-button>
+          <ion-button color="new" (click)="authService.SignIn(userEmail.value, userPassword.value)" (click)="signin(userEmail.value)">Log in</ion-button>
           <p class="fp" [routerLink]="['/forgot-password']">Forgot Password?</p>
           <span class="divider line one-line">or continue with</span>
           <ion-row>
@@ -42,5 +42,9 @@
         </div>
       </ion-row>
     </ion-grid>
+    <script>
+      
+      
+    </script>
   </ion-content>
 </ion-app>

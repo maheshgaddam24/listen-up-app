@@ -8,13 +8,13 @@
       </ion-row>
       <ion-row>
         <div class="row" *ngIf="authService.userData as user">
-          <ion-row><ion-avatar><img src="{{(user.photoURL) ? user.photoURL : '/assets/user.png'}}"></ion-avatar>
+          <ion-row><ion-avatar><img src="{{(user.photoURL) ? user.photoURL : './assets/user.png'}}"></ion-avatar>
           </ion-row>
           <div class="det">
-            <ion-item >
+            <ion-item color="black">
               <p>Name: <strong>{{(user.displayName) ? user.displayName : 'User'}}</strong></p>
             </ion-item>
-            <ion-item>
+            <ion-item color="black">
               <p>Email: <strong>{{user.email}}</strong></p>
             </ion-item>
           </div>

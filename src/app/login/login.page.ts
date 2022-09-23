@@ -15,4 +15,8 @@ export class LoginPage implements OnInit {
   ngOnInit() {
   }
 
+  signin(userEmail){
+    console.log(userEmail);
+  };
+
 }
