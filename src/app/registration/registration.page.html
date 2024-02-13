@@ -1,0 +1,62 @@
+<ion-app>
+  <ion-content color="black" scroll-y="false">
+    <ion-row>
+      <img class='img' src="./assets/icon/logo.png">
+    </ion-row>
+    <ion-row>
+      <div class="signup">
+        <h1>Sign Up</h1>
+      </div>
+    </ion-row>
+    <ion-row>
+      <div class="register">
+        <ion-item color="black">
+          <ion-label position="floating">Email</ion-label>
+          <ion-input type="email" autocapitalize="sentences" autocomplete="off" #userEmail required></ion-input>
+        </ion-item>
+        <ion-item color="black">
+          <ion-label position="floating">Password</ion-label>
+          <ion-input type="password" autocapitalize="sentences" autocomplete="off" #userPassword required></ion-input>
+        </ion-item>
+        <ion-button color="new" type="submit"
+          (click)="authService.SignUp(userEmail.value, userPassword.value)">Sign Up</ion-button>
+          <span class="divider line one-line">or continue with</span>
+          <ion-row>
+            <ion-col>
+              <img class="google" src="./assets/icon/google.png" (click)="authService.GoogleAuth()">
+            </ion-col>
+            <ion-col>
+              <img class="apple" src="./assets/icon/apple.png" (click)="authService.AppleAuth()">
+            </ion-col>
+            <ion-col>
+              <img class="fb" src="./assets/icon/fb.png" (click)="authService.FacebookAuth()">
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <div>
+              <h5 class="reg">Already have an account?<span class="btn" [routerLink]="['/login']">LogIn</span></h5>
+            </div>
+          </ion-row>
+        </div>
+    </ion-row>
+  </ion-content>
+</ion-app>
+
+
+
+    
+    
+      
+
+    
+
+
+<!-- <ion-item >
+  <ion-label position="floating">Email</ion-label>
+  <ion-input type="email" #email required></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="floating">Password</ion-label>
+  <ion-input type="password" #password required></ion-input>
+</ion-item>
+<ion-button color="new" type="submit" (click)="SignUp(email.value, password.value)">Sign Up</ion-button> -->
